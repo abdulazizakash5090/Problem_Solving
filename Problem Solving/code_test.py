@@ -84,13 +84,135 @@
 #             print(a)
 
 
-if __name__ == '__main__':
-    n = int(input())
-    student_marks = {}
-    for _ in range(n):
-        name, *line = input().split()
-        scores = list(map(float, line))
-        student_marks[name] = scores
-    query_name = input()
-    if query_name in student_marks:
-        print("%.02f" % (sum(student_marks[query_name])/3))
+# if __name__ == '__main__':
+#     n = int(input())
+#     student_marks = {}
+#     for _ in range(n):
+#         name, *line = input().split()
+#         scores = list(map(float, line))
+#         student_marks[name] = scores
+#     query_name = input()
+#     if query_name in student_marks:
+#         print("%.02f" % (sum(student_marks[query_name])/3))
+
+
+# print("Number Pattern")
+
+# row = 5
+
+# for i in range(1, row+1, 1):
+#     for j in range(1, i+1):
+#         print(j, end=' ')
+
+#     print("")
+
+
+# s = 0
+# n = int(input("Enter number "))
+
+# for i in range(1, n+1, 1):
+#     s += i
+# print("\n")
+# print("Sum is: ", s)
+
+
+# n = 2
+
+# for i in range(1, 11, 1):
+#     product = n * i
+#     print(product)
+
+# n = int(input().split())
+# if (n % 2 != 0) or (n >= 6 and n <= 20):
+#     print("Weird")
+# else:
+#     print("Not Weird")
+
+# if n % 2 == 0:
+#     if 2 <= n <= 5 or n > 20:
+#         print("Not Weird")
+#     else:
+#         pass
+# else:
+#     print("Weird")
+
+
+# n = int(input().split())
+
+# if n % 2 == 1:
+#     print("Werid")
+# elif n % 2 == 0 and n in range(2, 5):
+#     print("Not Werid")
+# elif n % 2 == 0 and n in range(6, 21):
+#     print("Weird")
+# else:
+#     pass
+
+# n = int(input())
+
+# for i in range(1, n):
+#     print(i*i)
+
+def is_leap(year):
+    leap = False
+
+    if (year % 100 == 0) and (year % 400 != 0):
+        leap = False
+    elif (year % 4 == 0):
+        leap = True
+    return leap
+
+
+# if year % 4 == 0:
+#     leap = True
+# if year % 100 == 0:
+#     leap = False
+# if year % 400 == 0:
+#     leap = True
+
+
+# def is_leap(year):
+#     leap = False
+
+#     if (year % 100 == 0) and (year % 400 != 0):
+#         leap = False
+#     elif (year % 4 == 0):
+#         leap = True
+#     return leap
+
+
+# x = int(input())
+# y = int(input())
+# z = int(input())
+# n = int(input())
+
+# arr = []
+# p = 0
+
+
+# for i in range(x+1):
+#     for j in range(y+1):
+#         for k in range(z+1):
+#             if x + y + z != n:
+#                 arr.append([])
+#                 arr[p] = [i, j, k]
+#                 p += 1
+# print(arr)
+
+x = int(input())
+y = int(input())
+z = int(input())
+n = int(input())
+
+arr = []
+p = 0
+
+for i in range(x+1):
+    for j in range(y+1):
+        for k in range(z+1):
+            if x + y + z != n:
+                arr.append([])
+                arr[p] = [i, j, k]
+                p += 1
+
+print(arr)
