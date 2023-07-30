@@ -199,20 +199,31 @@ def is_leap(year):
 #                 p += 1
 # print(arr)
 
-x = int(input())
-y = int(input())
-z = int(input())
-n = int(input())
+# x = int(input())
+# y = int(input())
+# z = int(input())
+# n = int(input())
 
-arr = []
-p = 0
+# arr = []
+# p = 0
 
-for i in range(x+1):
-    for j in range(y+1):
-        for k in range(z+1):
-            if x + y + z != n:
-                arr.append([])
-                arr[p] = [i, j, k]
-                p += 1
+# for i in range(x+1):
+#     for j in range(y+1):
+#         for k in range(z+1):
+#             if x + y + z != n:
+#                 arr.append([])
+#                 arr[p] = [i, j, k]
+#                 p += 1
 
-print(arr)
+# print(arr)
+
+
+# arr = [1, 2, 0, 4, 3, 0, 5, 0]
+
+# arr.sort()
+
+# arr.reverse()
+
+# print(arr)
+
+print(i*int((10**i-1)/9))
