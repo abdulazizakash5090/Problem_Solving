@@ -55,9 +55,40 @@ class Solution:
         return []  # No solution found
 
 
+class Solution(object):
+    def twoSum(self, nums, target):
+        seen = {}
+
+        for i in range(len(nums)):
+            diff = target - nums[i]
+            if diff in seen:
+                return [seen[diff], i]
+            else:
+                seen[nums[i]] = i
+
+
 def get_target_indices(nums, target):
 
     for i in range(len(nums)):
         for j in range(1, len(nums)):
             if nums[i] + nums[j] == target:
                 return i, j
+
+
+def target_indices(nums, target):
+    numMap = {}
+    n = len(nums)
+    for i in range(n):
+        complement = target - nums[i]
+        print(complement)
+        if complement in numMap:
+            return [numMap[complement], i]
+        numMap[nums[i]] = i
+
+    return []  # No solution found
+
+
+nums = [2, 7, 11, 15]
+target = 9
+ans = target_indices(nums, target)
+print(ans)
