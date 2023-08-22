@@ -20,6 +20,25 @@ class CLL:
                 print(temp.data, "-->", end=" ")
             print(temp.next.data)
 
+    def search(self):
+        x = int(input("Enter Element to be search in CLL"))
+        temp = self.head
+        count = 0
+        flag = 0
+        while (temp != self.tail):
+            if x == temp.data:
+                flag = 1
+                break
+            temp = temp.next
+            count = count+1
+        else:
+            if x == temp.data:
+                flag = 1
+        if flag == 1:
+            print(x, " is found at Position -", count+1)
+        else:
+            print(x, " is not found in Circular Linked List")
+
 
 L = CLL()
 n1 = Node(10)
@@ -42,3 +61,5 @@ L.tail = n3
 L.tail.next = L.head
 print("\nAfter third node")
 L.display()
+
+L.search()
