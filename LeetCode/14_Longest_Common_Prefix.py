@@ -39,3 +39,7 @@ class Solution:
                 return ans
             ans += first[i]
         return ans
+
+
+# Source
+# https://www.geeksforgeeks.org/python-program-to-find-longest-common-prefix-using-sorting/

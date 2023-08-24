@@ -18,3 +18,7 @@ class Solution:
                 current.next = list2
 
             return dummy.next
+
+
+# Source
+# https://www.geeksforgeeks.org/merge-two-sorted-linked-lists/

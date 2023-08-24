@@ -112,3 +112,7 @@ class Solution(object):
                 return False
 
         return len(stack) == 0
+
+
+# Source
+# https://www.geeksforgeeks.org/check-for-balanced-parentheses-in-python/

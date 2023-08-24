@@ -50,3 +50,7 @@ class Solution:
             "XC", "LXXXX").replace("CD", "CCCC").replace("CM", "DCCCC")
 
         return sum(map(lambda x: roman_to_integer[x], s))
+
+
+# Source
+# https: // www.geeksforgeeks.org/python-program-for -converting-roman-numerals-to-decimal-lying-between-1-to-3999/

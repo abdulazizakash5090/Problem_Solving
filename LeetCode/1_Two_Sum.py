@@ -92,3 +92,6 @@ nums = [2, 7, 11, 15]
 target = 9
 ans = target_indices(nums, target)
 print(ans)
+
+# Source
+# https://www.geeksforgeeks.org/check-if-pair-with-given-sum-exists-in-array/

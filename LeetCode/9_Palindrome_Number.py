@@ -28,3 +28,8 @@ class Solution:
             x //= 10
 
         return x == reversed_num or x == reversed_num // 10
+
+
+# Source
+# https: // www.geeksforgeeks.org/python-program-to-check-if -number-is -palindrome-one-liner/
+# https://www.geeksforgeeks.org/python-program-check-string-palindrome-not/
