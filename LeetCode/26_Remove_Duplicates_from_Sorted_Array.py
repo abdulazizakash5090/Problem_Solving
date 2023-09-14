@@ -1,4 +1,5 @@
-nums = [0, 0, 1, 1, 1, 2, 2, 3, 3, 4]
+# from typing import List
+# nums = [0, 0, 1, 1, 1, 2, 2, 3, 3, 4]
 
 # duplicate = []
 
@@ -26,30 +27,61 @@ nums = [0, 0, 1, 1, 1, 2, 2, 3, 3, 4]
 # nums = [1, 1, 2]
 # expectedNums = []
 
-# k = removeDuplicates(nums)
+# # k = removeDuplicates(nums)
+# nums = [0, 0, 1, 1, 1, 2, 2, 3, 3, 4]
+
+
+# class Solution:
+#     def removeDuplicates(self, nums: List[int]) -> int:
+#         j = 1
+#         for i in range(1, len(nums)):
+#             if nums[i] != nums[i - 1]:
+#                 nums[j] = nums[i]
+#                 j += 1
+#         return j
+
+
+# class Solution:
+#     def removeDuolicates(self, nums: List[int]) -> int:
+#         i = 1
+#         while i < len(nums):
+#             if nums[i] == nums[i-1]:
+#                 nums.pop(i)
+#             else:
+#                 i += 1
+#         return len(nums)
+
+
+# class Solution:
+#     def removeDuplicates(self, nums: List[int]) -> int:
+#         j = 1
+#         for i in range(1, len(nums)):
+#             if nums[i] != nums[i - 1]:
+#                 nums[j] = nums[i]
+#                 j += 1
+#         return j
+
+
+# # Create an instance of the Solution class
+# solution = Solution()
+
+# # Input list
+# nums = [1, 1, 2]
+
+# # Call the removeDuplicates method and print the result
+# result = solution.removeDuplicates(nums)
+# print(result)
+
 nums = [0, 0, 1, 1, 1, 2, 2, 3, 3, 4]
 
+j = 1
+for i in range(1, len(nums)):
+    if nums[i] != nums[i - 1]:
+        nums[j] = nums[i]
+        j += 1
 
-class Solution:
-    def removeDuplicates(self, nums: List[int]) -> int:
-        j = 1
-        for i in range(1, len(nums)):
-            if nums[i] != nums[i - 1]:
-                nums[j] = nums[i]
-                j += 1
-        return j
-
-
-class Solution:
-    def removeDuolicates(self, nums: List[int]) -> int:
-        i = 1
-        while i < len(nums):
-            if nums[i] == nums[i-1]:
-                nums.pop(i)
-            else:
-                i += 1
-        return len(nums)
+print(j)
 
 
 # Source
-# https://www.geeksforgeeks.org/python-ways-to-remove-duplicates-from-list/
+# https://www.geeksforgeeks.org/python-ways-to-remove-duplicates-from-list/ # This should print the length of the modified list
