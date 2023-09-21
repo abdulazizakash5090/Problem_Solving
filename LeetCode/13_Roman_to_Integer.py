@@ -61,7 +61,7 @@ m = {
     'M': 1000,
 }
 
-s = input()
+s = "MCMXCIV"
 
 ans = 0
 
