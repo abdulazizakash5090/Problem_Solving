@@ -96,22 +96,29 @@
 #     print(f"Popped {value}")
 # print(stack)
 
-class Solution(object):
-    def isValid(self, s):
-        stack = []
-        pairs = {
-            '(': ')',
-            '{': '}',
-            '[': ']'
-        }
 
-        for bracket in s:
-            if bracket in pairs:
-                stack.append(bracket)
-            elif len(stack) == 0 or bracket != pairs[stack.pop()]:
-                return False
+def isValid(s):
+    stack = []
+    pairs = {
+        '(': ')',
+        '{': '}',
+        '[': ']'
+    }
 
-        return len(stack) == 0
+    for bracket in s:
+        if bracket in pairs:
+            stack.append(bracket)
+            print("Stack Value", stack)
+        elif len(stack) == 0 or bracket != pairs[stack.pop()]:
+            return False
+
+    return len(stack) == 0
+
+
+s = '()[]{}'
+check = isValid(s)
+
+print("IsValid", check)
 
 
 # Source
