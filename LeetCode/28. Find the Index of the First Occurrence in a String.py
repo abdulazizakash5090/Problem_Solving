@@ -28,21 +28,21 @@
 #     return -1
 
 
-def strStr(haystack, needle):
-    m = len(haystack)
-    n = len(needle)
+# def strStr(haystack, needle):
+#     m = len(haystack)
+#     n = len(needle)
 
-    for i in range(m - n + 1):
-        if haystack[i:i + n] == needle:
-            return i
+#     for i in range(m - n + 1):
+#         if haystack[i:i + n] == needle:
+#             return i
 
-    return -1
+#     return -1
 
 
-haystack = "leetcode"
-needle = "leeto"
+# haystack = "sadbutsad"
+# needle = "sad"
 
-result = strStr(haystack, needle)
-print(result)
+# result = strStr(haystack, needle)
+# print(result)
 # Source
 # https://www.geeksforgeeks.org/python-first-character-occurrence-from-rear-string/
