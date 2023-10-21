@@ -30,7 +30,7 @@ class Solution:
 
 
 class Solution:
-    def mySqrt(selg, s: int) -> int:
+    def mySqrt(self, s: int) -> int:
         x = sqrt(s)
         if x % 1 < 0.5:
             return round(x)
